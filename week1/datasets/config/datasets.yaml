@@ -1,0 +1,39 @@
+# Dataset configurations
+datasets:
+  humaid_all:
+    source: "QCRI/HumAID-all"
+    type: "huggingface"
+    task: "classification"
+    description: "Humanitarian Aid dataset for crisis-related text classification"
+    
+  humaid_events:
+    source: "QCRI/HumAID-events"
+    type: "huggingface"
+    task: "classification"
+    description: "Event-specific humanitarian dataset"
+    
+  custom:
+    source: "path/to/custom/dataset"
+    type: "custom"
+    task: "custom"
+    description: "Custom dataset for specific evaluation"
+
+# Analysis parameters
+analysis:
+  text_columns:
+    - "text"
+    - "tweet"
+    - "message"
+  
+  label_columns:
+    - "label"
+    - "class"
+    - "category"
+    - "event_name"
+    - "crisis"
+  
+  metrics:
+    - "word_count"
+    - "char_length"
+    - "label_distribution"
+    - "text_quality"
