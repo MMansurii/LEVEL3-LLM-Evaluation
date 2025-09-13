@@ -24,7 +24,7 @@ Create a **50-100 example** custom evaluation dataset that reveals model limitat
 
 ## 🔄 Complete Workflow
 
-### Phase 1: Framework Creation (30 minutes)
+### Phase 1: Framework Creation 
 ```bash
 # Create annotation framework and guidelines
 python week3_dataset_creation.py --mode framework-only
@@ -47,7 +47,7 @@ open custom_evaluation_dataset/annotation_interface.html
 3. **Include confidence scores** and detailed reasoning
 4. **Focus on challenging cases** that would trip up models
 
-### Phase 3: Data Augmentation (30 minutes)
+### Phase 3: Data Augmentation 
 ```bash
 # Generate augmented examples
 python week3_dataset_creation.py --target-size 100
@@ -61,10 +61,10 @@ python week3_dataset_creation.py --target-size 100
 - **Perspective shifts**: First/third person
 - **Detail variation**: Information density changes
 
-### Phase 4: Quality Validation (15 minutes)
+### Phase 4: Quality Validation 
 Automated quality checks and recommendations for improvement.
 
-### Phase 5: Export and Documentation (15 minutes)
+### Phase 5: Export and Documentation 
 Multiple formats ready for model evaluation integration.
 
 ---
